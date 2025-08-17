@@ -1,0 +1,22 @@
+class Instagram_v1 
+{
+	static void features()
+	{
+		System.out.println("only photos can be posted");
+	}
+}
+class Instagram_v2 extends Instagram_v1
+{
+	static void features()
+	{
+		System.out.println("Photos and videos can be posted");
+	}
+}
+class Mainclass1
+{
+	public static void main(String[] args) 
+	{
+		Instagram_v2 I1 = new Instagram_v2();
+		I1.features();
+	}
+}

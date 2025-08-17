@@ -1,0 +1,22 @@
+class Google_maps_v1
+{
+	void maps()
+	{
+		System.out.println("Basic map view");
+	}
+}
+class Google_maps_v2 extends Google_maps_v1
+{
+	void maps()
+	{
+		System.out.println(" map view with real time traffic");
+	}
+}
+class Mainclass5
+{
+	public static void main(String[] args) 
+	{
+	Google_maps_v2 G1 = new Google_maps_v2;
+	G1.maps();
+	}
+}

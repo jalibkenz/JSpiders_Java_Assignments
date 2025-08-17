@@ -1,0 +1,24 @@
+class Zepto_v1 
+{
+	void delivery()
+	{
+		System.out.println("only groceries can be delivered");
+	}
+}
+class Zepto_v2 extends Zepto_v2
+{
+	void delivery()
+	{
+		System.out.println("groceries and cafe items can be delivered");
+	}
+}
+class Mainclass4
+{
+
+	public static void main(String[] args) 
+	{
+		Zepto_v2 Z1 = new Zepto_v2();
+		Z1.delivery();
+		
+	}
+}
