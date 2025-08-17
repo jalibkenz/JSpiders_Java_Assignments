@@ -1,0 +1,158 @@
+package assignment_14;
+
+class Ibm {
+  void product() {
+    System.out.println("Shoes");
+  }
+}
+
+class Ekart {
+  static void dispatch(Amazon a2) {
+    a2.product();
+  }
+}
+
+class Customer {
+  public static void main(String[] args) {
+    Amazon a1 = new Amazon();
+    Ekart.dispatch(a1);
+  }
+}class VarierBakery {
+    void drive() {
+        System.out.println("Cab Driver is on Level 3 Dispatch");
+    }
+}
+
+class Ola {
+    static void dispatch(Amazon driver) {
+        driver.drive();  // calling method using CabDriver object
+    }
+}
+
+public class Customer1 {
+    public static void main(String[] args) {
+        Amazon cab = new Amazon(); // creating CabDriver object
+        Ekart.dispatch(cab);               // passing it to dispatch method
+    }
+}class Amazon {
+    void drive() {
+        System.out.println("Cab Driver is on Level 3 Dispatch");
+    }
+}
+
+class BigBasket {
+    static void dispatch(Amazon orvc) {
+        orvc.drive();
+    }
+}
+
+public class Customer2 {
+    public static void main(String[] args) {
+        Amazon orv = new Amazon();
+        Ekart.dispatch(orv);               
+    }
+}class Amazon {
+    void drive() {
+        System.out.println("Class Level 3 Dispatch");
+    }
+}
+
+class Ekart {
+    static void dispatch(Amazon orvc) {
+        orvc.drive();
+    }
+}
+
+public class Customer3 {
+    public static void main(String[] args) {
+        Amazon orv = new Amazon();
+        Ekart.dispatch(orv);               
+    }
+}class Saudi {
+    void drive() {
+        System.out.println("Class Level 3 Dispatch");
+    }
+}
+
+class IndianOil {
+    static void dispatch(Saudi orvc) {
+        orvc.drive();
+    }
+}
+
+public class Customer4 {
+    public static void main(String[] args) {
+        Saudi orv = new Saudi();
+        IndianOil.dispatch(orv);               
+    }
+}class Kmf {
+    void drive() {
+        System.out.println("Class Level 3 Dispatch");
+    }
+}
+
+class Nandini {
+    static void dispatch(Kmf orvc) {
+        orvc.drive();
+    }
+}
+
+public class Customer5 {
+    public static void main(String[] args) {
+        Kmf orv = new Kmf();
+        Nandini.dispatch(orv);               
+    }
+}class Farmer {
+    void drive() {
+        System.out.println("Class Level 3 Dispatch");
+    }
+}
+
+class Dmart {
+    static void dispatch(Farmer orvc) {
+        orvc.drive();
+    }
+}
+
+public class Customer6 {
+    public static void main(String[] args) {
+        Farmer orv = new Farmer();
+        Dmart.dispatch(orv);               
+    }
+}class Pvr {
+    void drive() {
+        System.out.println("Class Level 3 Dispatch");
+    }
+}
+
+class BookMyShow {
+    static void dispatch(Pvr orvc) {
+        orvc.drive();
+    }
+}
+
+public class Customer7 {
+    public static void main(String[] args) {
+        Pvr orv = new Pvr();
+        BookMyShow.dispatch(orv);               
+    }
+}package assignment_14;
+
+class CabDriver{
+ void product(){
+	System.out.println("Level 3 Class output");
+ }
+}
+
+class Naukri{
+  static void dispatch(Amazon a2){
+	a2.product();
+ }
+}
+
+class Student{
+ public static void main(String[] args) {
+    Amazon a1=new Amazon();
+    Naukri.dispatch(a1);
+ }
+}

@@ -1,0 +1,14 @@
+class Loops5
+{
+	static void bwd(char start, char end)
+	{
+		for (char i=start;i>=end ;i--)
+		{
+			System.out.println("om"+i+"ok"+" ");
+		}
+	}
+	public static void main(String[] args) 
+	{
+		bwd('F','A');
+	}
+}

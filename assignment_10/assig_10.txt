@@ -1,0 +1,414 @@
+class MOCircle1 {
+
+    void area() {
+        final double pi = 3.142;
+        int r = 2;
+        double a = pi * r * r;
+        System.out.println("Area" + a);
+    }
+}
+
+class MOCircle {
+
+    public static void main(String[] args) {
+        new MOCircle1().area();
+
+    }
+}
+class Ellipse {
+
+    void areaCalc() {
+        final double pi = 3.142;
+        int a = 2;
+        int b = 3;
+        double area = pi * a * b;
+        System.out.println("Area of Ellipse: " + area);
+
+    }
+}
+
+class MOEllipse {
+    static void main(String[] args) {
+        Ellipse e = new Ellipse();
+        e.areaCalc();
+
+    }
+
+}
+class MOParallelogram1 {
+
+    void calcArea() {
+        int b = 2;
+        int vh = 3;
+        int area = b * vh;
+        System.out.println("Area of Parallelogram: " + area);
+    }
+}
+
+class MOParallelogram{
+    public static void main(String[] args) {
+        MOParallelogram1 p= new MOParallelogram1();
+        p.calcArea();
+    }
+
+}
+class MORectangle {
+
+    public static void main(String[] args) {
+        new MORectangle1().area();
+    }
+}
+
+class MORectangle1 {
+
+    void area() {
+        int b = 2, h = 3;
+        int area = b * h;
+        System.out.println("Area" + area);
+    }
+
+}class MOSector1 {
+
+    void areaCalc() {
+        int r = 2;
+        double theeta = 3.142; /* angle=180 wiz pi rads */
+        double area = 0.5 * r * r * theeta;
+        System.out.println("Area of Sector: " + area);
+
+    }
+}
+
+class MOSector {
+    public static void main(String[] args) {
+        MOSector1 s = new MOSector1();
+        s.areaCalc();
+    }
+
+}
+class MOSquare1 {
+
+    void calcArea() {
+        int a = 10;
+        int area = a * a;
+        System.out.println("Area of Square: " + area);
+    }
+}
+  class MOSquare{
+    public static void main(String[] args) {
+      MOSquare1 s = new MOSquare1();
+      s.calcArea();
+
+    }
+
+}
+class MOTrapezoid1 {
+
+    void areaTrapezoid() {
+        int s1 = 2;
+        int s2 = 3;
+        int h = 4;
+        double area = 0.5 * (s1 + s2) * h;
+        System.out.println("Area of Trapezoid: " + area);
+    }
+}
+
+class MOTrapezoid {
+    public static void main(String[] args) {
+        MOTrapezoid1 t = new MOTrapezoid1();
+        t.areaTrapezoid();
+    }
+
+}
+class MOTriangle1 {
+
+    void calc() {
+        int b = 2, h = 3;
+        double area = 0.5 * b * h;
+        System.out.println("Area of Triangle: " + area);
+    }
+
+
+}
+class MOTriangle{   
+    public static void main(String[] args) {
+        MOTriangle1 t=new MOTriangle1();
+        t.calc();
+
+    }
+
+}
+ class MPCircle1 {
+
+    void areaCircle(int r) {
+        final double pi = 3.142;
+
+        double area_circle = pi * r * r;
+        System.out.println("Area of the circle: " + area_circle);
+    }
+
+}
+
+class MPCircle{
+    public static void main(String[] args) {
+       MPCircle1 c=new MPCircle1();
+        c.areaCircle(10);
+    }
+}
+ class MPEllipse1 {
+    
+
+    void areaEllipse(int a, int b){
+        final double pi=3.142;
+        double area_ellipse=pi*a*b;
+        System.out.println("Area of the Ellipse: "+area_ellipse);
+
+    }
+}
+
+ class MPEllipse {
+
+    
+    public static void main(String[] args) {
+       MPEllipse1 e=new MPEllipse1();
+        e.areaEllipse(10,10);
+    }
+}
+
+
+class MPParallelogram1 {
+    
+     void areaParallelogram(int b, int h){
+        int area_parallelogram=b*h;
+        System.out.println("Area of Parallelogram: "+area_parallelogram);
+    }
+   }
+   class MPParallelogram{
+     public static void main(String[] args) {
+        MPParallelogram1 p=new MPParallelogram1();
+        p.areaParallelogram(10, 20);
+     }
+}
+ class MPRectangle1 {
+    
+     void areaRectangle( int w, int h){
+        int area_rectangle=w*h;
+        System.out.println("Ares of the Rectangle: "+area_rectangle);
+
+    }
+}
+    class MPRectangle{
+    public static void main(String[] args) {
+        MPRectangle1 r= new MPRectangle1();
+        r.areaRectangle(10, 20);
+        
+    }
+}
+class MPSector1 {
+
+    void areaSector(int r, int angle_in_radians) {
+
+        double area_sector = 0.5 * r * r * angle_in_radians;
+        System.out.println("Area of the sector: " + area_sector);
+
+    }
+}
+class MPSector{
+
+    public static void main(String[] args) {
+
+        MPSector1 s = new MPSector1();
+        s.areaSector(10, 2);
+
+    }
+}
+
+class MPSquare1 {
+    
+     void areaSquare(int a){
+
+        int area_square=a*a;
+        System.out.println("Area of the square is: "+area_square);
+    }
+   }
+   class MPSquare{
+
+    public static void main(String[] args) {
+       MPSquare1 s=new MPSquare1();
+       s.areaSquare(10);
+    }
+}
+ class MPTrapezoid1 {
+    
+     void areaTrapezoid(int ps1, int ps2, int h){
+        double area_trapezoid=0.5*(ps1+ps2)*h;
+        System.out.println("Area of Trapezoid: "+area_trapezoid);
+    }
+ }
+ class MPTrapezoid {
+ 
+
+    public static void main(String[] args) {
+        MPTrapezoid1 t=new MPTrapezoid1();
+        t.areaTrapezoid(1,2,3);
+    }
+}
+class MPTriangle1 {
+    void areaTriangle(int h, int b) {
+
+        float areaT = 0.5f * b * h;
+
+        System.out.println("Area of Triangle: " + areaT);
+    }
+}
+
+class MPTriangle {
+    public static void main(String[] args) {
+        MPTriangle1 t = new MPTriangle1();
+        t.areaTriangle(1, 2);
+    }
+
+}class MRCircle1 {
+
+    double areaCircle(int r) {
+        final double pi = 3.142;
+
+        double area_circle = pi * r * r;
+
+        return area_circle;
+        
+    }
+}
+class MRCircle {
+    public static void main(String[] args) {
+        MRCircle1 c=new MRCircle1();
+        double aoc=c.areaCircle(10);
+        System.out.println("Area of the circle: " + aoc);
+    }
+}
+class MREllipse1 {
+
+    double areaEllipse() {
+        final double pi = 3.142;
+        int a = 2;
+        int b = 3;
+        double area_ellipse = pi * a * b;
+        return area_ellipse;
+
+    }
+}
+class MREllipse {
+
+    public static void main(String[] args) {
+        MREllipse1 e= new MREllipse1();
+        double aoe = e.areaEllipse();
+        System.out.println("Area of the Ellipse: " + aoe);
+    }
+}
+
+
+class MRParallelogram1 {
+    
+    int areaParallelogram(){
+        int b=2;
+        int h=3;
+        int area_parallelogram=b*h;
+        return area_parallelogram;
+        
+    }
+}
+class MRParallelogram {
+     public static void main(String[] args) {
+        MRParallelogram1 p =new MRParallelogram1();
+        int aop = p.areaParallelogram();
+        System.out.println("Area of Parallelogram: "+aop);
+     }
+}
+
+class MRRectangle1 {
+    
+    int areaRectangle(){
+        int w=2; int h=3;
+        int area_rectangle=w*h;
+        return area_rectangle;
+        
+
+    }
+}
+class MRRectangle {
+    public static void main(String[] args) {
+        MRRectangle1 r=new MRRectangle1();
+        int aor= r.areaRectangle();
+        System.out.println("Ares of the Rectangle: "+aor);
+        
+    }
+}
+class MRSector1 {
+
+    double areaSector() {
+        int r = 2;
+        int angle_in_radians = 3;
+        double area_sector = 0.5 * r * r * angle_in_radians;
+        return area_sector;
+
+    }
+}
+
+class MRSector {
+
+    public static void main(String[] args) {
+        MRSector1 s = new MRSector1();
+        double aos = s.areaSector();
+        System.out.println("Area of the sector: " + aos);
+    }
+}
+
+class MRSquare1 {
+
+    int areaSquare() {
+        int a = 2;
+        int area_square = a * a;
+        return area_square;
+    }
+}
+class MRSquare {
+    public static void main(String[] args) {
+        MRSquare1 s=new MRSquare1();
+        int aos = s.areaSquare();
+        System.out.println("Area of the square is: " + aos);
+        System.out.println("CHECK: "+s);
+    }
+}
+
+class MRTrapezoid1 {
+    
+    double areaTrapezoid(){
+
+        int ps1=2; int ps2=3; int h=4;
+        double area_trapezoid=0.5*(ps1+ps2)*h;
+        return area_trapezoid;
+    }
+}
+class MRTrapezoid {
+    public static void main(String[] args) {
+        MRTrapezoid1 t= new MRTrapezoid1();
+       double aot= t.areaTrapezoid();
+                System.out.println("Area of Trapezoid: "+aot);
+    }
+}
+class MRTriangle1 {
+    float areaTriangle() {
+        int h = 2;
+        int b = 3;
+        float areaT = 0.5f * b * h;
+
+        return areaT;
+    }
+}
+class MRTriangle {
+    public static void main(String[] args) {
+        MRTriangle1 t=new MRTriangle1();
+        float aot = t.areaTriangle();
+        System.out.println("Area of Triangle: " + aot);
+    }
+
+}

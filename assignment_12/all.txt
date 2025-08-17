@@ -1,0 +1,169 @@
+class Bike {
+    double bike_cost;
+    static String bike_brand = "Royal Enfield";
+    String bike_colour;
+
+    Bike(double a, String c){
+        bike_cost=a;
+        bike_colour=c;
+    }
+
+    public static void main(String[] args) {
+        Bike b = new Bike(130000,"Black");
+
+        System.out.println("Bike: " + bike_brand +
+                           " Colour: " + b.bike_colour +
+                           " Bike Cost: " + b.bike_cost);
+    }
+}class Car {
+    double car_cost;
+    static String car_model_name = "Tata Tiago";
+    String car_type;
+
+    Car(double a, String b){
+        car_cost=a;
+        car_type=b;
+    }
+
+    public static void main(String[] args) {
+        Car c = new Car(150000,"XL");
+    
+
+        System.out.println("Car: " + car_model_name + " | " +
+                           "Car Type = " + c.car_type + " | " +
+                           "Car Cost = " + c.car_cost);
+    }
+}class Cloth {
+    String cloth_colour;
+    static double cloth_cost = 2000; // Uniform or sports
+    String cloth_size;
+
+    Cloth(String a, String b) {
+        cloth_colour = a;
+        cloth_size = b;
+    }
+
+    public static void main(String[] args) {
+        Cloth c = new Cloth("Black", "XL");
+
+        System.out.println("Cloth cost " + cloth_cost + "Cost " + cloth_cost + "Size " + c.cloth_size);
+    }
+}class Course {
+    String course_name;
+    static String univ_name = "VTU";
+    double exam_cost;
+
+    Course(String a, double b) {
+        course_name = a;
+        exam_cost = b;
+    }
+
+    public static void main(String[] args) {
+        Course c = new Course("Java FS", 55850);
+
+        System.out.println("Course Name: " + c.course_name +
+                " University: " + univ_name +
+                " Cost of Exam: " + c.exam_cost);
+    }
+}class Employee {
+    String emp_id;
+    static char emp_grade = 'A';
+    double emp_sal;
+
+    Employee(String a, double b) {
+        emp_id = a;
+        emp_sal = b;
+    }
+
+    public static void main(String[] args) {
+        Employee e = new Employee("1", 50000);
+
+        System.out.println("Employee Grade: " + emp_grade +
+                " Employee ID: " + e.emp_id +
+                " Salary: " + e.emp_sal);
+    }
+}class Home {
+    static double home_cost = 20000000; // 2 Crore flat
+    String home_name;
+    String home_colour;
+
+    Home(String a, String b) {
+        home_name = a;
+        home_colour = b;
+    }
+
+    public static void main(String[] args) {
+        Home h = new Home("Spark", "White");
+
+        System.out.println("Flat Cost: " + home_cost +
+                " Flat Name: " + h.home_name +
+                " Flat Colour: " + h.home_colour);
+    }
+}class Laptop {
+    String laptop_name;
+    double laptop_cost;
+    static String laptop_brand = "Apple";
+
+    Laptop(String a, double b) {
+        laptop_name = a;
+        laptop_cost = b;
+    }
+
+    public static void main(String[] args) {
+        Laptop l = new Laptop("Macbook Pro M4", 250000);
+
+        System.out.println("Brand: " + laptop_brand +
+                " Name/Model: " + l.laptop_name +
+                " Price: " + l.laptop_cost);
+    }
+}class Mobile {
+    double mobile_cost;
+    static String mobile_model_name = "Google Pixel 8a";
+    String mobile_colour;
+
+    Mobile(double a, String b) {
+        mobile_cost = a;
+        mobile_colour = b;
+    }
+
+    public static void main(String[] args) {
+        Mobile m = new Mobile(15000.50, "Black");
+
+        System.out.println("Mobile Cost = " + m.mobile_cost + " | " +
+                "Mobile Model Name = " + mobile_model_name + " | " +
+                "Mobile Color = " + m.mobile_colour);
+    }
+}class School {
+    static String school_name = "HTPS";
+    char school_grade;
+    static int school_strength = 1500;
+
+    School(char a) {
+        school_grade = a;
+    }
+
+    public static void main(String[] args) {
+        School s = new School('A');
+
+        System.out.println("School: " + school_name +
+                " Grade: " + s.school_grade +
+                " Strength: " + school_strength);
+    }
+}class Tv {
+    double tv_cost;
+    static String tv_brand = "Sony";
+    String tv_type;
+
+    Tv(double a, String b) {
+        tv_cost = a;
+        tv_type = b;
+    }
+
+    public static void main(String[] args) {
+        Tv t = new Tv(150000, "OLED");
+
+        System.out.println("Brand: " + tv_brand +
+                " Type: " + t.tv_type +
+                " Price: " + t.tv_cost);
+    }
+}

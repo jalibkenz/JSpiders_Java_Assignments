@@ -1,0 +1,17 @@
+class Loops1
+{
+	static void fwd(int start,int end)
+		{
+		for(int i=start;i<=end;i++)
+		{
+			System.out.print(" "+i+" ");
+		}
+		}
+	public static void main(String[] args) 
+	{
+		
+		fwd(1,10);
+	}
+}
+
+

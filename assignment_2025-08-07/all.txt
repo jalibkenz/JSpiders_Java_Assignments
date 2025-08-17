@@ -1,0 +1,187 @@
+public class CbMulBwd {
+
+    static int calc(int a) {
+        return a * a * a;
+    }
+
+    static void calccbmulbwd(int s, int e) {
+        int mul = 1;
+        for (int i = s; i >=e; i--) {
+            mul = mul + calc(i);
+        }
+        System.out.println(mul);
+    }
+
+    public static void main(String[] args) {
+        calccbmulbwd(6, 1);
+    }
+}public class CbSumBwd {
+
+    static int calc(int a) {
+        return a * a * a;
+    }
+
+    static void calccbsumbwd(int s, int e) {
+        int sum = 0;
+        for (int i = s; i >=e; i--) {
+            sum = sum + calc(i);
+        }
+        System.out.println(sum);
+    }
+
+    public static void main(String[] args) {
+        calccbsumbwd(6, 1);
+    }
+}public class PrEvBwd {
+
+    static int calc(int a){
+        return (a*a);
+    }
+
+    static void printer(int s, int e){
+        for (int i = s; i >=e; i--) {
+            if (i%2==0) {
+                System.out.print(calc(i)+" ");
+                
+            }
+            
+        }
+    }
+
+    public static void main(String[] args) {
+        printer(6, 1);
+        
+    }
+    
+}
+public class PrEvFwd {
+
+    static int calc(int a){
+        return (a*a);
+    }
+
+    static void printer(int s, int e){
+        for (int i = s; i <=e; i++) {
+            if (i%2==0) {
+                System.out.print(calc(i)+" ");
+                
+            }
+            
+        }
+    }
+
+    public static void main(String[] args) {
+        printer(1, 6);
+        
+    }
+    
+}
+public class PrOdBwd {
+
+    static int calc(int a){
+        return (a*a);
+    }
+
+    static void printer(int s, int e){
+        for (int i = s; i >=e; i--) {
+            if (i%2!=0) {
+                System.out.print(calc(i)+" ");
+                
+            }
+            
+        }
+    }
+
+    public static void main(String[] args) {
+        printer(6, 1);
+        
+    }
+    
+}
+public class PrOdFwd {
+
+    static int calc(int a){
+        return (a*a);
+    }
+
+    static void printer(int s, int e){
+        for (int i = s; i <=e; i++) {
+            if (i%2!=0) {
+                System.out.print(calc(i)+" ");
+                
+            }
+            
+        }
+    }
+
+    public static void main(String[] args) {
+        printer(1, 6);
+        
+    }
+    
+}
+public class SearchBwd {
+    static void Search(int s, int e, int x){
+        for (int i = s; i >=e; i--) {
+            if (i==x) {
+                System.out.println("Exist");
+                
+            }
+            
+        }
+    }   
+
+    public static void main(String[] args) {
+        Search(6, 1, 2);
+    }
+}
+public class SearchFwd {
+    static void Search(int s, int e, int x){
+        for (int i = s; i <=e; i++) {
+            if (i==x) {
+                System.out.println("Exist");
+                
+            }
+            
+        }
+    }   
+
+    public static void main(String[] args) {
+        Search(1, 6, 4);
+    }
+}
+public class SqMulFwd {
+
+    static int calc(int a) {
+        return a * a;
+    }
+
+    static void calcsqmulfwd(int s, int e) {
+        int mul = 1;
+        for (int i = s; i <=e; i++) {
+            mul = mul + calc(i);
+        }
+        System.out.println(mul);
+    }
+
+    public static void main(String[] args) {
+        calcsqmulfwd(1, 6);
+    }
+}public class SqSumFwd {
+
+    static int calc(int a) {
+        return a * a;
+    }
+
+    static void calcsqsumfwd(int s, int e) {
+        int mul = 0;
+        for (int i = s; i <=e; i++) {
+            mul = mul + calc(i);
+        }
+        System.out.println(mul);
+    }
+
+    public static void main(String[] args) {
+        calcsqsumfwd(1, 6);
+    }
+}

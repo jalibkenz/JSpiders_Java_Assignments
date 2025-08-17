@@ -1,0 +1,14 @@
+class Loops2
+{
+	static void fwd(char start,char end)
+	{
+		for (char i=start;i<=end;i++)
+		{
+			System.out.print(" "+i+"ok ");
+		}
+	}
+	public static void main(String[] args)
+	{
+		fwd('A','F');
+	}
+}

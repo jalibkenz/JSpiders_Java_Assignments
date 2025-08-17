@@ -1,0 +1,311 @@
+class SumCubeForward1
+{
+	public static void main(String[] args) 
+	{
+		square(1,10);
+	}
+	static void square(int start,int end)
+	{
+		int sum=0;
+		while(start<=end)
+		{
+			sum=sum+cube(start);
+			start++;
+		}
+		System.out.println(sum);
+	}
+	static int cube(int num)
+	{
+		int res=num*num*num;
+		return res;
+	}
+}
+
+
+
+
+
+class SumCubeBackward1
+{
+	public static void main(String[] args) 
+	{
+		square(10,1);
+	}
+	static void square(int start,int end)
+	{
+		int sum=0;
+		while(start>=end)
+		{
+			sum=sum+cube(start);
+			start--;
+		}
+		System.out.println(sum);
+	}
+	static int cube(int num)
+	{
+		int res=num*num*num;
+		return res;
+	}
+}
+
+
+
+
+
+class SumSquareForward1
+{
+	public static void main(String[] args) 
+	{
+		square(1,10);
+	}
+	static void square(int start,int end)
+	{
+		int sum=0;
+		while(start<=end)
+		{
+			sum=sum+cube(start);
+			start++;
+		}
+		System.out.println(sum);
+	}
+	static int cube(int num)
+	{
+		int res=num*num;
+		return res;
+	}
+}
+
+
+
+
+
+class SumSquareBackward1
+{
+	public static void main(String[] args) 
+	{
+		square(10,1);
+	}
+	static void square(int start,int end)
+	{
+		int sum=0;
+		while(start>=end)
+		{
+			sum=sum+cube(start);
+			start--;
+		}
+		System.out.println(sum);
+	}
+	static int cube(int num)
+	{
+		int res=num*num;
+		return res;
+	}
+}
+
+
+
+
+
+
+class SearchForward1
+{
+	public static void main(String[] args) 
+	{
+		searchNumber(1,6,4);
+	}
+	static void searchNumber(int start,int end,int search)
+	{
+		while(start<=end)
+		{
+			if(start==search)
+			{
+				System.out.println("Im Present");
+			}
+			start++;
+		}
+	}
+}
+
+
+
+
+
+
+class SearchBackward1
+{
+	public static void main(String[] args) 
+	{
+		searchNumber(6,1,2);
+	}
+	static void searchNumber(int start,int end,int search)
+	{
+		while(start>=end)
+		{
+			if(start==search)
+			{
+				System.out.println("Im Present");
+			}
+			start--;
+		}
+	}
+}
+
+
+
+
+
+
+class EvenForward1 
+{
+	public static void main(String[] args) 
+	{
+		printEven(1,10);
+	}
+	static void printEven(int start,int end)
+	{
+		while(start<=end)
+		{
+			if(start%2==0)
+			{
+				System.out.println(start);
+			}
+			start++;
+		}
+	}
+}
+
+
+
+
+
+
+class EvenBackward1 
+{
+	public static void main(String[] args) 
+	{
+		printEven(10,1);
+	}
+	static void printEven(int start,int end)
+	{
+		while(start>=end)
+		{
+			if(start%2==0)
+			{
+				System.out.println(start);
+			}
+			start--;
+		}
+	}
+}
+
+
+
+
+
+
+class OddForward1 
+{
+	public static void main(String[] args) 
+	{
+		printOdd(1,10);
+	}
+	static void printOdd(int start,int end)
+	{
+		while(start<=end)
+		{
+			if(start%2==1)
+			{
+				System.out.println(start);
+			}
+			start++;
+		}
+	}
+}
+
+
+
+
+
+
+class OddBackward1 
+{
+	public static void main(String[] args) 
+	{
+		printOdd(10,1);
+	}
+	static void printOdd(int start,int end)
+	{
+		while(start>=end)
+		{
+			if(start%2==1)
+			{
+				System.out.println(start);
+			}
+			start--;
+		}
+	}
+}
+
+
+
+
+
+
+class EvenSquareForward1
+{
+	public static void main(String[] args) 
+	{
+		printEven(1,10);
+	}
+	static void printEven(int start,int end)
+	{
+		while(start<=end)
+		{
+			if(start%2==0)
+			{
+				System.out.println(square(start));
+			}
+			start++;
+		}
+	}
+	static int square(int num)
+	{
+		int res=num*num;
+		return res;
+	}
+}
+
+
+
+
+
+
+class EvenSquareBackward1
+{
+	public static void main(String[] args) 
+	{
+		printEven(10,1);
+	}
+	static void printEven(int start,int end)
+	{
+		while(start>=end)
+		{
+			if(start%2==0)
+			{
+				System.out.println(square(start));
+			}
+			start--;
+		}
+	}
+	static int square(int num)
+	{
+		int res=num*num;
+		return res;
+	}
+}
+
+
+
+
+
+
