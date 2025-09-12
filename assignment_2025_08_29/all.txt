@@ -1,0 +1,148 @@
+class instagram {
+    private String pswd="1";
+
+    public void setpswd (String pswd){
+        this.pswd=pswd;
+
+    }
+    public String getpswd(){
+        return pswd;
+
+    }
+
+}
+
+class MainClass_1{
+    public static void main(String[] args) {
+        instagram i = new instagram();
+        System.out.println(i.getpswd());
+        i.setpswd("2");
+        System.out.println(i.getpswd());
+    }
+}class snapchat {
+    private String pswd="1";
+
+    public void setpswd (String pswd){
+        this.pswd=pswd;
+
+    }
+    public String getpswd(){
+        return pswd;
+
+    }
+
+}
+
+class MainClass_2{
+    public static void main(String[] args) {
+        snapchat i = new snapchat();
+        System.out.println(i.getpswd());
+        i.setpswd("2");
+        System.out.println(i.getpswd());
+    }
+}class whatsapp {
+    private String pswd="1";
+
+    public void setpswd (String pswd){
+        this.pswd=pswd;
+
+    }
+    public String getpswd(){
+        return pswd;
+
+    }
+
+}
+
+class MainClass_3{
+    public static void main(String[] args) {
+        whatsapp i = new whatsapp();
+        System.out.println(i.getpswd());
+        i.setpswd("2");
+        System.out.println(i.getpswd());
+    }
+}class linkedin {
+    private String pswd="1";
+
+    public void setpswd (String pswd){
+        this.pswd=pswd;
+
+    }
+    public String getpswd(){
+        return pswd;
+
+    }
+
+}
+
+class MainClass_4{
+    public static void main(String[] args) {
+        linkedin i = new linkedin();
+        System.out.println(i.getpswd());
+        i.setpswd("2");
+        System.out.println(i.getpswd());
+    }
+}class qtalk {
+    private String pswd="1";
+
+    public void setpswd (String pswd){
+        this.pswd=pswd;
+
+    }
+    public String getpswd(){
+        return pswd;
+
+    }
+
+}
+
+class MainClass_5{
+    public static void main(String[] args) {
+        qtalk i = new qtalk();
+        System.out.println(i.getpswd());
+        i.setpswd("2");
+        System.out.println(i.getpswd());
+    }
+}class pubg {
+    private String pswd="1";
+
+    public void setpswd (String pswd){
+        this.pswd=pswd;
+
+    }
+    public String getpswd(){
+        return pswd;
+
+    }
+
+}
+
+class MainClass_6{
+    public static void main(String[] args) {
+        pubg i = new pubg();
+        System.out.println(i.getpswd());
+        i.setpswd("2");
+        System.out.println(i.getpswd());
+    }
+}class telegram {
+    private String pswd="1";
+
+    public void setpswd (String pswd){
+        this.pswd=pswd;
+
+    }
+    public String getpswd(){
+        return pswd;
+
+    }
+
+}
+
+class MainClass_7{
+    public static void main(String[] args) {
+        telegram i = new telegram();
+        System.out.println(i.getpswd());
+        i.setpswd("2");
+        System.out.println(i.getpswd());
+    }
+}

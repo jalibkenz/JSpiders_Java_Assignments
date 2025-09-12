@@ -1,0 +1,313 @@
+public class MainClass1 {
+    
+    int mobileCost;
+    String mobileName;
+    String mobileColour;
+
+
+    MainClass1(int mobileCost, String mobileName, String mobileColour){
+        this.mobileCost=mobileCost;
+        this.mobileName=mobileName;
+        this.mobileColour=mobileColour;
+    }
+
+    public boolean equals(Object obj){
+       MainClass1 m1=(MainClass1)obj;
+       return this.mobileCost==m1.mobileCost;
+    }
+    
+    public static void main(String[] args) {
+        MainClass1 m1=new MainClass1(20000,"Samsung","Black");
+        MainClass1 m2=new MainClass1(20000,"Iphone","White");
+
+        if(m1.equals(m2)){
+            System.out.println("Both mobiles are of same cost");
+        }else{
+            System.out.println("Both mobiles are of different cost");
+        }
+        
+
+    }
+}
+
+
+
+public class MainClass2 {
+
+    int carCost;
+    String carModelName;
+    String carType; // petrol/diesel
+
+    MainClass2(int carCost, String carModelName, String carType) {
+        this.carCost = carCost;
+        this.carModelName = carModelName;
+        this.carType = carType;
+    }
+
+    public boolean equals(Object obj) {
+        MainClass2 c = (MainClass2) obj;
+        return this.carCost == c.carCost;
+    }
+
+    public static void main(String[] args) {
+        MainClass2 c1 = new MainClass2(800000, "Hyundai Creta", "Petrol");
+        MainClass2 c2 = new MainClass2(800000, "Kia Seltos", "Diesel");
+
+        if (c1.equals(c2)) {
+            System.out.println("Both cars are of same cost");
+        } else {
+            System.out.println("Both cars are of different cost");
+        }
+    }
+}
+
+
+
+public class MainClass3 {
+
+    String schoolName;
+    String schoolGrade;
+    int schoolStrength;
+
+    MainClass3(String schoolName, String schoolGrade, int schoolStrength) {
+        this.schoolName = schoolName;
+        this.schoolGrade = schoolGrade;
+        this.schoolStrength = schoolStrength;
+    }
+
+    public boolean equals(Object obj) {
+        MainClass3 s = (MainClass3) obj;
+        return this.schoolGrade.equals(s.schoolGrade);
+    }
+
+    public static void main(String[] args) {
+        MainClass3 s1 = new MainClass3("Oxford", "A", 1200);
+        MainClass3 s2 = new MainClass3("Cambridge", "A", 1500);
+
+        if (s1.equals(s2)) {
+            System.out.println("Both schools have the same grade");
+        } else {
+            System.out.println("Schools have different grades");
+        }
+    }
+}
+
+
+public class MainClass4 {
+
+    int tvCost;
+    String tvBrand;
+    String tvType;
+
+    MainClass4(int tvCost, String tvBrand, String tvType) {
+        this.tvCost = tvCost;
+        this.tvBrand = tvBrand;
+        this.tvType = tvType;
+    }
+
+    public boolean equals(Object obj) {
+        MainClass4 t = (MainClass4) obj;
+        return this.tvBrand.equals(t.tvBrand);
+    }
+
+    public static void main(String[] args) {
+        MainClass4 t1 = new MainClass4(40000, "Sony", "LED");
+        MainClass4 t2 = new MainClass4(50000, "Sony", "OLED");
+
+        if (t1.equals(t2)) {
+            System.out.println("Both TVs are of same brand");
+        } else {
+            System.out.println("TV brands are different");
+        }
+    }
+}
+
+
+
+
+public class MainClass5 {
+
+    int bikeCost;
+    String bikeBrand;
+    String bikeColour;
+
+    MainClass5(int bikeCost, String bikeBrand, String bikeColour) {
+        this.bikeCost = bikeCost;
+        this.bikeBrand = bikeBrand;
+        this.bikeColour = bikeColour;
+    }
+
+    public boolean equals(Object obj) {
+        MainClass5 b = (MainClass5) obj;
+        return this.bikeBrand.equals(b.bikeBrand);
+    }
+
+    public static void main(String[] args) {
+        MainClass5 b1 = new MainClass5(150000, "Yamaha", "Blue");
+        MainClass5 b2 = new MainClass5(160000, "Yamaha", "Black");
+
+        if (b1.equals(b2)) {
+            System.out.println("Both bikes are of same brand");
+        } else {
+            System.out.println("Bike brands are different");
+        }
+    }
+}
+
+
+
+
+public class MainClass6 {
+
+    String courseName;
+    String universityName;
+    int examCost;
+
+    MainClass6(String courseName, String universityName, int examCost) {
+        this.courseName = courseName;
+        this.universityName = universityName;
+        this.examCost = examCost;
+    }
+
+    public boolean equals(Object obj) {
+        MainClass6 c = (MainClass6) obj;
+        return this.courseName.equals(c.courseName);
+    }
+
+    public static void main(String[] args) {
+        MainClass6 c1 = new MainClass6("Computer Science", "Delhi University", 5000);
+        MainClass6 c2 = new MainClass6("Computer Science", "Mumbai University", 6000);
+
+        if (c1.equals(c2)) {
+            System.out.println("Both courses are the same");
+        } else {
+            System.out.println("Courses are different");
+        }
+    }
+}
+
+
+
+
+public class MainClass7 {
+
+    String laptopName;
+    int laptopCost;
+    String laptopBrand;
+
+    MainClass7(String laptopName, int laptopCost, String laptopBrand) {
+        this.laptopName = laptopName;
+        this.laptopCost = laptopCost;
+        this.laptopBrand = laptopBrand;
+    }
+
+    public boolean equals(Object obj) {
+        MainClass7 l = (MainClass7) obj;
+        return this.laptopBrand.equals(l.laptopBrand);
+    }
+
+    public static void main(String[] args) {
+        MainClass7 l1 = new MainClass7("ThinkPad", 70000, "Lenovo");
+        MainClass7 l2 = new MainClass7("XPS", 90000, "Dell");
+
+        if (l1.equals(l2)) {
+            System.out.println("Both laptops are of same brand");
+        } else {
+            System.out.println("Laptop brands are different");
+        }
+    }
+}
+
+
+
+
+public class MainClass8 {
+
+    String homeName;
+    int homeCost;
+    String homeColour;
+
+    MainClass8(String homeName, int homeCost, String homeColour) {
+        this.homeName = homeName;
+        this.homeCost = homeCost;
+        this.homeColour = homeColour;
+    }
+
+    public boolean equals(Object obj) {
+        MainClass8 h = (MainClass8) obj;
+        return this.homeCost == h.homeCost;
+    }
+
+    public static void main(String[] args) {
+        MainClass8 h1 = new MainClass8("Villa Paradise", 5000000, "White");
+        MainClass8 h2 = new MainClass8("Dream House", 5000000, "Beige");
+
+        if (h1.equals(h2)) {
+            System.out.println("Both homes cost the same");
+        } else {
+            System.out.println("Homes cost differently");
+        }
+    }
+}
+
+
+
+
+public class MainClass9 {
+
+    int empId;
+    double empSalary;
+    String empGrade;
+
+    MainClass9(int empId, double empSalary, String empGrade) {
+        this.empId = empId;
+        this.empSalary = empSalary;
+        this.empGrade = empGrade;
+    }
+
+    public boolean equals(Object obj) {
+        MainClass9 e = (MainClass9) obj;
+        return this.empGrade.equals(e.empGrade);
+    }
+
+    public static void main(String[] args) {
+        MainClass9 e1 = new MainClass9(101, 60000, "A");
+        MainClass9 e2 = new MainClass9(102, 70000, "A");
+
+        if (e1.equals(e2)) {
+            System.out.println("Both employees have the same grade");
+        } else {
+            System.out.println("Employee grades are different");
+        }
+    }
+}
+
+
+public class MainClass10 {
+
+    String clothColour;
+    int clothCost;
+    String clothSize; // L, XL, M
+
+    MainClass10(String clothColour, int clothCost, String clothSize) {
+        this.clothColour = clothColour;
+        this.clothCost = clothCost;
+        this.clothSize = clothSize;
+    }
+
+    public boolean equals(Object obj) {
+        MainClass10 c = (MainClass10) obj;
+        return this.clothSize.equals(c.clothSize);
+    }
+
+    public static void main(String[] args) {
+        MainClass10 c1 = new MainClass10("Red", 1500, "M");
+        MainClass10 c2 = new MainClass10("Blue", 2000, "M");
+
+        if (c1.equals(c2)) {
+            System.out.println("Both clothes are of same size");
+        } else {
+            System.out.println("Cloth sizes are different");
+        }
+    }
+}

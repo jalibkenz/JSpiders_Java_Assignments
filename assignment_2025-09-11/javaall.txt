@@ -1,0 +1,282 @@
+import java.util.ArrayList;
+class BikeDetails{
+	int bike_cost;
+	String bike_brand;
+	String bike_color;
+	public String toString() {
+		return "Bike[Bike Cost="+bike_cost+",Bike brand="+bike_brand+",Bike color="+bike_color+"]";
+	}
+	public BikeDetails(int bike_cost,String bike_brand,String bike_color) {
+		this.bike_cost=bike_cost;
+		this.bike_brand=bike_brand;
+		this.bike_color=bike_color;
+	}
+}
+public class MainClass1{
+	public static void main(String[] args) {
+		ArrayList<BikeDetails> l1=new ArrayList<BikeDetails>();
+		l1.add(new BikeDetails(300000,"NS 200","Black"));
+		l1.add(new BikeDetails(200000,"RS 200","White"));
+		l1.add(new BikeDetails(100000,"R15","Black"));
+		l1.add(new BikeDetails(350000,"BMW","White"));
+		l1.add(new BikeDetails(450000,"Duke","Black"));
+		for (int i = 0; i < l1.size(); i++) {
+			Object o1=l1.get(i);
+			BikeDetails m1=(BikeDetails)o1;
+			System.out.println(m1);
+		}
+	}
+}import java.util.ArrayList;
+class CarDetails{
+	int car_cost;
+	String model_name;
+	String car_type;
+	public String toString() {
+		return "Car[Car Cost="+car_cost+",Model Name="+model_name+",Car Type="+car_type+"]";
+	}
+	public CarDetails(int car_cost,String model_name,String car_type) {
+		this.car_cost=car_cost;
+		this.model_name=model_name;
+		this.car_type=car_type;
+	}
+}
+public class MainClass2{
+	public static void main(String[] args) {
+		ArrayList<CarDetails> l1=new ArrayList<CarDetails>();
+		l1.add(new CarDetails(30000000,"Lamborghini","Black"));
+		l1.add(new CarDetails(20000000,"Audi","White"));
+		l1.add(new CarDetails(10000000,"Ferrari","Black"));
+		l1.add(new CarDetails(35000000,"Tesla","White"));
+		l1.add(new CarDetails(45000000,"Porsche","Black"));
+		for (int i = 0; i < l1.size(); i++) {
+			Object o1=l1.get(i);
+			CarDetails m1=(CarDetails)o1;
+			System.out.println(m1);
+		}
+	}
+}import java.util.ArrayList;
+class ClothDetails{
+	String cloth_color;
+	char cloth_size;
+	int cloth_cost;
+	public String toString() {
+		return "Cloth[Cloth color="+cloth_color+",Cloth size="+cloth_size+",Cloth cost="+cloth_cost+"]";
+	}
+	public ClothDetails(String cloth_color,char cloth_size,int cloth_cost) {
+		this.cloth_color=cloth_color;
+		this.cloth_size=cloth_size;
+		this.cloth_cost=cloth_cost;
+	}
+}
+public class MainClass3{
+	public static void main(String[] args) {
+		ArrayList<ClothDetails> l1=new ArrayList<ClothDetails>();
+		l1.add(new ClothDetails("White",'S',2000));
+		l1.add(new ClothDetails("Grey",'M',3000));
+		l1.add(new ClothDetails("Pink",'L',4000));
+		for (int i = 0; i < l1.size(); i++) {
+			Object o1=l1.get(i);
+			ClothDetails m1=(ClothDetails)o1;
+			System.out.println(m1);
+		}
+	}
+}import java.util.ArrayList;
+class CourseDetails{
+	int exam_cost;
+	String course_name;
+	String university_name;
+	public String toString() {
+		return "Course[Exam Cost="+exam_cost+",Course Name="+course_name+",University Name="+university_name+"]";
+	}
+	public CourseDetails(int exam_cost,String course_name,String university_name) {
+		this.exam_cost=exam_cost;
+		this.course_name=course_name;
+		this.university_name=university_name;
+	}
+}
+public class MainClass4{
+	public static void main(String[] args) {
+		ArrayList<CourseDetails> l1=new ArrayList<CourseDetails>();
+		l1.add(new CourseDetails(3000,"BE","VTU"));
+		l1.add(new CourseDetails(2000,"Btech","RGUHS"));
+		l1.add(new CourseDetails(1000,"MBA","VTU"));
+		l1.add(new CourseDetails(3500,"BBA","RGUHS"));
+		l1.add(new CourseDetails(4500,"Mtech","VTU"));
+		for (int i = 0; i < l1.size(); i++) {
+			Object o1=l1.get(i);
+			CourseDetails m1=(CourseDetails)o1;
+			System.out.println(m1);
+		}
+	}
+}import java.util.ArrayList;
+class EmployeeDetails{
+	int emp_id;
+	char emp_grade;
+	int emp_sal;
+	public String toString() {
+		return "Employee[Emp Name="+emp_id+",Emp Grade="+emp_grade+",Emp Sal="+emp_sal+"]";
+	}
+	public EmployeeDetails(int emp_id,char emp_grade,int emp_sal) {
+		this.emp_id=emp_id;
+		this.emp_grade=emp_grade;
+		this.emp_sal=emp_sal;
+	}
+}
+public class MainClass5{
+	public static void main(String[] args) {
+		ArrayList<EmployeeDetails> l1=new ArrayList<EmployeeDetails>();
+		l1.add(new EmployeeDetails(101,'A',1000000));
+		l1.add(new EmployeeDetails(102,'B',2000000));
+		l1.add(new EmployeeDetails(103,'C',3000000));
+		l1.add(new EmployeeDetails(104,'D',4000000));
+		l1.add(new EmployeeDetails(105,'E',5000000));
+		for (int i = 0; i < l1.size(); i++) {
+			Object o1=l1.get(i);
+			EmployeeDetails m1=(EmployeeDetails)o1;
+			System.out.println(m1);
+		}
+	}
+}import java.util.ArrayList;
+class HomeDetails{
+	int home_cost;
+	String home_name;
+	String home_color;
+	public String toString() {
+		return "Home[Home Cost="+home_cost+",Home Name="+home_name+",Home Color="+home_color+"]";
+	}
+	public HomeDetails(int home_cost,String home_name,String home_color) {
+		this.home_cost=home_cost;
+		this.home_name=home_name;
+		this.home_color=home_color;
+	}
+}
+public class MainClass6{
+	public static void main(String[] args) {
+		ArrayList<HomeDetails> l1=new ArrayList<HomeDetails>();
+		l1.add(new HomeDetails(30000000,"Sri Sai","Pink"));
+		l1.add(new HomeDetails(20000000,"Sri","White"));
+		l1.add(new HomeDetails(10000000,"Sai","Grey"));
+		l1.add(new HomeDetails(35000000,"Om","Violet"));
+		l1.add(new HomeDetails(45000000,"Namah","Green"));
+		for (int i = 0; i < l1.size(); i++) {
+			Object o1=l1.get(i);
+			HomeDetails m1=(HomeDetails)o1;
+			System.out.println(m1);
+		}
+	}
+}
+import java.util.ArrayList;
+class LaptopDetails{
+	int laptop_cost;
+	String laptop_name;
+	String laptop_brand;
+	public String toString() {
+		return "Laptop[Laptop Cost="+laptop_cost+",Laptop Name="+laptop_name+",Laptop brand="+laptop_brand+"]";
+	}
+	public LaptopDetails(int laptop_cost,String laptop_name,String laptop_brand) {
+		this.laptop_cost=laptop_cost;
+		this.laptop_name=laptop_name;
+		this.laptop_brand=laptop_brand;
+	}
+}
+public class MainClass7{
+	public static void main(String[] args) {
+		ArrayList<LaptopDetails> l1=new ArrayList<LaptopDetails>();
+		l1.add(new LaptopDetails(30000,"HP","HP Victus"));
+		l1.add(new LaptopDetails(20000,"DELL","Dell Inspiron"));
+		l1.add(new LaptopDetails(10000,"MACBOOK","MacBook Air"));
+		l1.add(new LaptopDetails(35000,"ASUS","Asus Tuf Gaming"));
+		l1.add(new LaptopDetails(45000,"SAMSUNG","Samsung Galaxy Book5"));
+		for (int i = 0; i < l1.size(); i++) {
+			Object o1=l1.get(i);
+			LaptopDetails m1=(LaptopDetails)o1;
+			System.out.println(m1);
+		}
+	}
+}import java.util.ArrayList;
+class MobileDetails{
+	int mobile_cost;
+	String model_name;
+	String mobile_color;
+	public String toString() {
+		return "Mobile[Mobile Cost="+mobile_cost+",Model Name="+model_name+",mobile_color="+mobile_color+"]";
+	}
+	public MobileDetails(int mobile_cost,String model_name,String mobile_color) {
+		this.mobile_cost=mobile_cost;
+		this.model_name=model_name;
+		this.mobile_color=mobile_color;
+	}
+}
+public class MainClass8{
+	public static void main(String[] args) {
+		ArrayList<MobileDetails> l1=new ArrayList<MobileDetails>();
+		l1.add(new MobileDetails(30000,"iQOO","Black"));
+		l1.add(new MobileDetails(20000,"Samsung","White"));
+		l1.add(new MobileDetails(10000,"iPhone","Black"));
+		l1.add(new MobileDetails(35000,"Realme","White"));
+		l1.add(new MobileDetails(45000,"Poco","Black"));
+		for (int i = 0; i < l1.size(); i++) {
+			Object o1=l1.get(i);
+			MobileDetails m1=(MobileDetails)o1;
+			System.out.println(m1);
+		}
+	}
+}
+import java.util.ArrayList;
+class SchoolDetails{
+	String school_name;
+	char school_grade;
+	int school_strength;
+	public String toString() {
+		return "School[School Name="+school_name+",School Grade="+school_grade+",School Strength="+school_strength+"]";
+	}
+	public SchoolDetails(String school_name,char school_grade,int school_strength) {
+		this.school_name=school_name;
+		this.school_grade=school_grade;
+		this.school_strength=school_strength;
+	}
+}
+public class MainClass9{
+	public static void main(String[] args) {
+		ArrayList<SchoolDetails> l1=new ArrayList<SchoolDetails>();
+		l1.add(new SchoolDetails("Amrita Vidyalayam",'A',100));
+		l1.add(new SchoolDetails("Navodaya",'B',200));
+		l1.add(new SchoolDetails("Edu Asia",'C',300));
+		l1.add(new SchoolDetails("Sapthagiri",'D',400));
+		l1.add(new SchoolDetails("Bapuji",'E',500));
+		for (int i = 0; i < l1.size(); i++) {
+			Object o1=l1.get(i);
+			SchoolDetails m1=(SchoolDetails)o1;
+			System.out.println(m1);
+		}
+	}
+}
+import java.util.ArrayList;
+class TvDetails{
+	int tv_cost;
+	String tv_brand;
+	String tv_type;
+	public String toString() {
+		return "Tv[Tv Cost="+tv_cost+",Tv brand="+tv_brand+",Tv type="+tv_type+"]";
+	}
+	public TvDetails(int tv_cost,String tv_brand,String tv_type) {
+		this.tv_cost=tv_cost;
+		this.tv_brand=tv_brand;
+		this.tv_type=tv_type;
+	}
+}
+public class MainClass9a{
+	public static void main(String[] args) {
+		ArrayList<TvDetails> l1=new ArrayList<TvDetails>();
+		l1.add(new TvDetails(30000,"LG","Black"));
+		l1.add(new TvDetails(20000,"Samsung","White"));
+		l1.add(new TvDetails(10000,"Sony","Black"));
+		l1.add(new TvDetails(35000,"Panasonic","White"));
+		l1.add(new TvDetails(45000,"Croma","Black"));
+		for (int i = 0; i < l1.size(); i++) {
+			Object o1=l1.get(i);
+			TvDetails m1=(TvDetails)o1;
+			System.out.println(m1);
+		}
+	}
+}

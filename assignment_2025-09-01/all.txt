@@ -1,0 +1,233 @@
+public class Bike {
+    int bikeCost;
+    String bikeBrand;
+    String bikeColour;
+
+    Bike(int bikeCost, String bikeBrand, String bikeColour) {
+        this.bikeCost = bikeCost;
+        this.bikeBrand = bikeBrand;
+        this.bikeColour = bikeColour;
+    }
+
+    @Override
+    public String toString() {
+        return "Bike [cost=" + bikeCost + ", brand=" + bikeBrand + ", colour=" + bikeColour + "]";
+    }
+
+    public static void main(String[] args) {
+        Bike b1 = new Bike(70000, "Hero", "Red");
+        Bike b2 = new Bike(150000, "Royal Enfield", "Black");
+
+        System.out.println(b1);
+        System.out.println(b2);
+    }
+}public class Car {
+    int carCost;
+    String carModelName;
+    String carType; // petrol/diesel
+
+    Car(int carCost, String carModelName, String carType) {
+        this.carCost = carCost;
+        this.carModelName = carModelName;
+        this.carType = carType;
+    }
+
+    @Override
+    public String toString() {
+        return "Car [cost=" + carCost + ", model=" + carModelName + ", type=" + carType + "]";
+    }
+
+    public static void main(String[] args) {
+        Car c1 = new Car(800000, "Honda City", "Petrol");
+        Car c2 = new Car(1200000, "Hyundai Creta", "Diesel");
+
+        System.out.println(c1);
+        System.out.println(c2);
+    }
+}public class Cloth {
+    String clothColour;
+    int clothCost;
+    String clothSize;
+
+    Cloth(String clothColour, int clothCost, String clothSize) {
+        this.clothColour = clothColour;
+        this.clothCost = clothCost;
+        this.clothSize = clothSize;
+    }
+
+    @Override
+    public String toString() {
+        return "Cloth [colour=" + clothColour + ", cost=" + clothCost + ", size=" + clothSize + "]";
+    }
+
+    public static void main(String[] args) {
+        Cloth c1 = new Cloth("Blue", 1500, "L");
+        Cloth c2 = new Cloth("Red", 1200, "M");
+
+        System.out.println(c1);
+        System.out.println(c2);
+    }
+}public class Course {
+    String courseName;
+    String univName;
+    int examCost;
+
+    Course(String courseName, String univName, int examCost) {
+        this.courseName = courseName;
+        this.univName = univName;
+        this.examCost = examCost;
+    }
+
+    @Override
+    public String toString() {
+        return "Course [name=" + courseName + ", university=" + univName + ", examCost=" + examCost + "]";
+    }
+
+    public static void main(String[] args) {
+        Course c1 = new Course("B.Tech", "IIT", 5000);
+        Course c2 = new Course("MBA", "IIM", 7000);
+
+        System.out.println(c1);
+        System.out.println(c2);
+    }
+}public class Employee {
+    int empId;
+    double empSal;
+    String empGrade;
+
+    Employee(int empId, double empSal, String empGrade) {
+        this.empId = empId;
+        this.empSal = empSal;
+        this.empGrade = empGrade;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee [id=" + empId + ", salary=" + empSal + ", grade=" + empGrade + "]";
+    }
+
+    public static void main(String[] args) {
+        Employee e1 = new Employee(101, 55000, "A");
+        Employee e2 = new Employee(102, 45000, "B");
+
+        System.out.println(e1);
+        System.out.println(e2);
+    }
+}public class Home {
+    String homeName;
+    int homeCost;
+    String homeColour;
+
+    Home(String homeName, int homeCost, String homeColour) {
+        this.homeName = homeName;
+        this.homeCost = homeCost;
+        this.homeColour = homeColour;
+    }
+
+    @Override
+    public String toString() {
+        return "Home [name=" + homeName + ", cost=" + homeCost + ", colour=" + homeColour + "]";
+    }
+
+    public static void main(String[] args) {
+        Home h1 = new Home("Villa", 5000000, "White");
+        Home h2 = new Home("Apartment", 2000000, "Grey");
+
+        System.out.println(h1);
+        System.out.println(h2);
+    }
+}public class Laptop {
+    String laptopName;
+    int laptopCost;
+    String laptopBrand;
+
+    Laptop(String laptopName, int laptopCost, String laptopBrand) {
+        this.laptopName = laptopName;
+        this.laptopCost = laptopCost;
+        this.laptopBrand = laptopBrand;
+    }
+
+    @Override
+    public String toString() {
+        return "Laptop [name=" + laptopName + ", cost=" + laptopCost + ", brand=" + laptopBrand + "]";
+    }
+
+    public static void main(String[] args) {
+        Laptop l1 = new Laptop("MacBook Air", 90000, "Apple");
+        Laptop l2 = new Laptop("ThinkPad", 70000, "Lenovo");
+
+        System.out.println(l1);
+        System.out.println(l2);
+    }
+}public class Mobile {
+    int mobileCost;
+    String mobileModelName;
+    String mobileColour;
+
+    Mobile(int mobileCost, String mobileModelName, String mobileColour) {
+        this.mobileCost = mobileCost;
+        this.mobileModelName = mobileModelName;
+        this.mobileColour = mobileColour;
+    }
+
+    @Override
+    public String toString() {
+        return "Mobile [cost=" + mobileCost + ", model=" + mobileModelName + ", colour=" + mobileColour + "]";
+    }
+
+    public static void main(String[] args) {
+        Mobile m1 = new Mobile(25000, "Samsung", "Black");
+        Mobile m2 = new Mobile(30000, "OnePlus", "Blue");
+        Mobile m3 = new Mobile(20000, "Redmi", "White");
+
+        System.out.println(m1);
+        System.out.println(m2);
+        System.out.println(m3);
+    }
+}public class School {
+    String schoolName;
+    String schoolGrade;
+    int schoolStrength;
+
+    School(String schoolName, String schoolGrade, int schoolStrength) {
+        this.schoolName = schoolName;
+        this.schoolGrade = schoolGrade;
+        this.schoolStrength = schoolStrength;
+    }
+
+    @Override
+    public String toString() {
+        return "School [name=" + schoolName + ", grade=" + schoolGrade + ", strength=" + schoolStrength + "]";
+    }
+
+    public static void main(String[] args) {
+        School s1 = new School("DPS", "A", 1200);
+        School s2 = new School("KV", "B", 900);
+
+        System.out.println(s1);
+        System.out.println(s2);
+    }
+}public class TV {
+    int tvCost;
+    String tvBrand;
+    String tvType;
+
+    TV(int tvCost, String tvBrand, String tvType) {
+        this.tvCost = tvCost;
+        this.tvBrand = tvBrand;
+        this.tvType = tvType;
+    }
+
+    @Override
+    public String toString() {
+        return "TV [cost=" + tvCost + ", brand=" + tvBrand + ", type=" + tvType + "]";
+    }
+
+    public static void main(String[] args) {
+        TV t1 = new TV(40000, "Sony", "LED");
+        TV t2 = new TV(25000, "Samsung", "LCD");
+
+        System.out.println(t1);
+        System.out.println(t2);
+    }
+}
