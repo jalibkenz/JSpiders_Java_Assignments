@@ -1,0 +1,45 @@
+interface ola
+{
+	void Ride();
+
+}
+class Auto implements ola
+{
+	public void Ride()
+	{
+		System.out.println("auto booked");
+	}
+}
+class Bike implements ola
+{
+	public void Ride()
+	{
+		System.out.println("Bike booked");
+	}
+}class Car implements ola
+{
+	public void Ride()
+	{
+		System.out.println("Car booked");
+	}
+}
+class stimulator
+{
+	static void veh_ride(ola o1)
+	{
+		o1.Ride();
+	}
+}
+public class Mainclass1
+{
+	public static void main(String[] args) 
+	{
+		Auto j1 = new Auto();
+		Car p1 = new Car();
+		Bike b1 = new Bike();
+		
+		stimulator.veh_ride(j1);
+		stimulator.veh_ride(p1);
+		stimulator.veh_ride(b1);
+	}
+}

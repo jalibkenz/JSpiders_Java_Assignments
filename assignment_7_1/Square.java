@@ -1,7 +1,7 @@
 class Square {
 
     public static void main(String[] args) {
-        InnerSquare.calcArea(10);
+        InnerSquare.calcArea();
 
     }
 
@@ -9,8 +9,8 @@ class Square {
 
 class InnerSquare {
 
-    static void calcArea(int a) {
-
+    static void calcArea() {
+        int a = 10;
         int area = a * a;
         System.out.println("Area of Square: " + area);
     }

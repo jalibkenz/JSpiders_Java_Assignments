@@ -1,8 +1,7 @@
 class Triangle {
 
     public static void main(String[] args) {
-        double a = TriangleAreaCalc.calc();
-        System.out.println("Area of Traingle: " + a);
+        TriangleAreaCalc.calc(2,3);
 
     }
 
@@ -10,11 +9,9 @@ class Triangle {
 
 class TriangleAreaCalc {
 
-    static double calc() {
-        int b = 2;
-        int h = 3;
+    static void calc(int b, int h) {
         double area = 0.5 * b * h;
-        return area;
+        System.out.println("Area of Triangle: " + area);
     }
 
 }

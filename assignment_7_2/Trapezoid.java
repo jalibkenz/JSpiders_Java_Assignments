@@ -1,21 +1,16 @@
 class Trapezoid {
     public static void main(String[] args) {
-        double a = InnerTrapezoid.areaTrapezoid();
-        System.out.println("Area of Trapezoid: " + a);
+        InnerTrapezoid.areaTrapezoid(2, 3, 4);
     }
 
 }
 
 class InnerTrapezoid {
 
-    static double areaTrapezoid() {
-        int s1 = 2;
-        int s2 = 3;
-        int h = 4;
+    static void areaTrapezoid(int s1, int s2, int h) {
 
         double area = 0.5 * (s1 + s2) * h;
-        return area;
-
+        System.out.println("Area of Trapezoid: " + area);
     }
 
 }

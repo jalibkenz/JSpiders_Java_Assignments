@@ -1,7 +1,7 @@
 class Ellipse {
 
     public static void main(String[] args) {
-        InnerEllipse.areaCalc(2, 3);
+        InnerEllipse.areaCalc();
 
     }
 
@@ -9,10 +9,12 @@ class Ellipse {
 
 class InnerEllipse {
 
-    static void areaCalc(int a, int b) {
-        final double pi = 3.142;
-        double area = pi * a * b;
-        System.out.println("Area of Ellipse: " + area);
+    static void areaCalc(){
+        final double pi=3.142;
+        int a=2;
+        int b=3;
+        double area=pi*a*b;
+        System.out.println("Area of Ellipse: "+area);
 
     }
 

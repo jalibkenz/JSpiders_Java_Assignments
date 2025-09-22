@@ -1,19 +1,17 @@
 class Parallelogram {
 
     public static void main(String[] args) {
-        int a=InnerParallelogram.calcArea();
-        System.out.println("Area of Parallelogram: " + a);
+        InnerParallelogram.calcArea(2, 3);
     }
 
 }
 
 class InnerParallelogram {
 
-    static int calcArea() {
-        int b = 2, vh = 3;
-        int area = b * vh;
-        return area;
+    static void calcArea(int b, int vh) {
 
+        int area = b * vh;
+        System.out.println("Area of Parallelogram: " + area);
     }
 
 }

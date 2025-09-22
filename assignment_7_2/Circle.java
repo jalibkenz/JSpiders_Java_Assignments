@@ -1,21 +1,17 @@
 class Circle {
 
     public static void main(String[] args) {
-        double a = InnerCircle.areaCalc();
-        System.out.println("Area of Circle: " + a);
-
+        InnerCircle.areaCalc(2);
     }
 
 }
 
 class InnerCircle {
 
-    static double areaCalc() {
-        int r = 2;
+    static void areaCalc(int r) {
         final double pi = 3.142;
         double area = pi * r * r;
-        return area;
-
+        System.out.println("Area of Circle: " + area);
     }
 
 }

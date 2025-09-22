@@ -1,18 +1,16 @@
 class Rectangle {
     public static void main(String[] args) {
-        int a = InnerRectangle.areaRectangle();
-        System.out.println("Area of Rectangle: " + a);
+        InnerRectangle.areaRectangle(2, 3);
     }
 
 }
 
 class InnerRectangle {
 
-    static int areaRectangle() {
-        int w = 2, h = 3;
-        int area = w * h;
-        return area;
+    static void areaRectangle(int w, int h) {
 
+        int area = w * h;
+        System.out.println("Area of Rectangle: " + area);
     }
 
 }

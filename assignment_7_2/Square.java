@@ -1,19 +1,18 @@
 class Square {
 
     public static void main(String[] args) {
-        int a = InnerSquare.calcArea();
-        System.out.println("Area of Square: " + a);
+        InnerSquare.calcArea(10);
+
     }
 
 }
 
 class InnerSquare {
 
-    static int calcArea() {
-        int a = 10;
-        int area = a * a;
-        return area;
+    static void calcArea(int a) {
 
+        int area = a * a;
+        System.out.println("Area of Square: " + area);
     }
 
 }

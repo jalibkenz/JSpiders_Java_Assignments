@@ -1,0 +1,46 @@
+interface Zomato
+{
+	void ordered();
+
+}
+class Hotel1 implements Zomato
+{
+	public void ordered()
+	{
+		System.out.println("Hotel1");
+	}
+}
+class Hotel2 implements Zomato
+{
+	public void ordered()
+	{
+		System.out.println("Hotel2");
+	}
+}
+class Hotel3 implements Zomato
+{
+	public void ordered()
+	{
+		System.out.println("Hotel3");
+	}
+}
+class stimulator4
+{
+	static void food_order(Zomato z1)
+	{
+		z1.ordered();
+	}
+}
+public class Mainclass4
+{
+	public static void main(String[] args) 
+	{
+		Hotel1 j1 = new Hotel1();
+		Hotel2 p1 = new Hotel2();
+		Hotel3 h1 = new Hotel3();
+		
+		stimulator4.food_order(j1);
+		stimulator4.food_order(p1);
+		stimulator4.food_order(h1);
+	}
+}

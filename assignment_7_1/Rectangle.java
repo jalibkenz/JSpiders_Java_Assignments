@@ -1,14 +1,15 @@
 class Rectangle {
     public static void main(String[] args) {
-        InnerRectangle.areaRectangle(2, 3);
+        InnerRectangle.areaRectangle();
     }
 
 }
 
 class InnerRectangle {
 
-    static void areaRectangle(int w, int h) {
-
+    static void areaRectangle() {
+        int w = 2;
+        int h = 3;
         int area = w * h;
         System.out.println("Area of Rectangle: " + area);
     }
