@@ -1,7 +1,8 @@
-// remove(Object 0)
+//keySet()
 
-import java.util.HashSet;
-import java.util.Objects;
+
+import java.util.Map.Entry;
+import java.util.HashMap;
 
 class Employee {
     int empId;
@@ -15,44 +16,28 @@ class Employee {
     }
 
     public String toString() {
-        return "Employee[ " +
-                "Employee ID: " + empId + " | " +
+        return "Employee ID: " + empId + " | " +
                 "Employee Name: " + empName + " | " +
-                "Mobile Number: " + mobNumber +
-                " ]";
-    }
-
-    public boolean equals(Object o) {
-        Employee e=(Employee)o;
-        return this.empId == e.empId && this.empName.equals(e.empName) && this.mobNumber == e.mobNumber;
-    }
-
-    public int hashCode(){
-        return Objects.hash(empId,empName,mobNumber);
-    }
-
-    static void printHashSet(HashSet<Employee> xlist) {
-        for (Employee x:xlist) {
-            System.out.println(x);
-        }
-
+                "Mobile Number: " + mobNumber;
     }
 }
 
-public class HashSet10 {
+public class HashMap10 {
 
     public static void main(String[] args) {
-        HashSet<Employee> al = new HashSet<>();
-        al.add(new Employee(1, "Jalib", 9995550077L));
-        al.add(new Employee(2, "Karthik", 1234567890L));
-        Employee.printHashSet(al);
+        HashMap<Integer,Employee> al = new HashMap<Integer,Employee>();
+        al.put(1,new Employee(100, "Jalib", 9995550077L));
+        al.put(2,new Employee(101, "Karthik", 1234567890L));
+        Employee e = new Employee(007, "Zine", 9895001234L);
+        al.put(3,e);
+        System.out.println("----------------HASH MAP-----------");
+        for (Entry<Integer,Employee> x:al.entrySet()) {
+            System.out.println(x);
+        }
 
-        // remove(Object 0)
-        System.out.println("//remove(Object 0)");
-        Employee e=new Employee(2, "Karthik", 1234567890L);
-        al.remove(e);
-        System.out.println("//After removed");
-        Employee.printHashSet(al);
-
+        //keySet()
+        System.out.println("-----------------------------------");
+        System.out.println(al.keySet());
+        
     }
 }

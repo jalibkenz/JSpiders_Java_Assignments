@@ -1,6 +1,7 @@
-//addAll(collection c)
+//get(Object key)
 
-import java.util.HashSet;
+import java.util.Map.Entry;
+import java.util.HashMap;
 
 class Employee {
     int empId;
@@ -14,27 +15,24 @@ class Employee {
     }
 
     public String toString() {
-        return "Employee[ " +
-                "Employee ID: " + empId + " | " +
+        return "Employee ID: " + empId + " | " +
                 "Employee Name: " + empName + " | " +
-                "Mobile Number: " + mobNumber +
-                " ]";
+                "Mobile Number: " + mobNumber;
     }
 }
 
-public class HashSet03 {
+public class HashMap03 {
 
     public static void main(String[] args) {
-        HashSet<Employee> al = new HashSet<>();
-        al.add(new Employee(1, "Jalib", 9995550077L));
-        al.add(new Employee(2, "Karthik", 1234567890L));
-        HashSet<Employee> al2 = new HashSet<>();
-        al2.add(new Employee(1, "Lokesh", 7816278377L));
-        al2.add(new Employee(2, "Gowtham", 9985642638L));
-        // addAll(collection c)
-        al.addAll(al2);
-        for (Employee x:al) {
+        HashMap<Integer,Employee> al = new HashMap<Integer,Employee>();
+        al.put(1,new Employee(100, "Jalib", 9995550077L));
+        al.put(2,new Employee(101, "Karthik", 1234567890L));
+        for (Entry<Integer,Employee> x:al.entrySet()) {
             System.out.println(x);
         }
+
+        //get(Object key)
+        System.out.println(al.get(1));
+        
     }
 }
