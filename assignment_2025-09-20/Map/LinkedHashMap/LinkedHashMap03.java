@@ -1,6 +1,7 @@
-//addAll(collection c)
+//get(Object key)
 
-import java.util.LinkedHashSet;
+import java.util.Map.Entry;
+import java.util.LinkedHashMap;
 
 class Employee {
     int empId;
@@ -14,27 +15,24 @@ class Employee {
     }
 
     public String toString() {
-        return "Employee[ " +
-                "Employee ID: " + empId + " | " +
+        return "Employee ID: " + empId + " | " +
                 "Employee Name: " + empName + " | " +
-                "Mobile Number: " + mobNumber +
-                " ]";
+                "Mobile Number: " + mobNumber;
     }
 }
 
-public class LinkedHashSet03 {
+public class LinkedHashMap03 {
 
     public static void main(String[] args) {
-        LinkedHashSet<Employee> al = new LinkedHashSet<>();
-        al.add(new Employee(1, "Jalib", 9995550077L));
-        al.add(new Employee(2, "Karthik", 1234567890L));
-        LinkedHashSet<Employee> al2 = new LinkedHashSet<>();
-        al2.add(new Employee(1, "Lokesh", 7816278377L));
-        al2.add(new Employee(2, "Gowtham", 9985642638L));
-        // addAll(collection c)
-        al.addAll(al2);
-        for (Employee x:al) {
+        LinkedHashMap<Integer,Employee> al = new LinkedHashMap<Integer,Employee>();
+        al.put(1,new Employee(100, "Jalib", 9995550077L));
+        al.put(2,new Employee(101, "Karthik", 1234567890L));
+        for (Entry<Integer,Employee> x:al.entrySet()) {
             System.out.println(x);
         }
+
+        //get(Object key)
+        System.out.println(al.get(1));
+        
     }
 }

@@ -1,6 +1,7 @@
-// size()
+// hashCode()
 
-import java.util.TreeSet;
+import java.util.Map.Entry;
+import java.util.TreeMap;
 import java.util.Objects;
 
 class Employee {
@@ -15,40 +16,47 @@ class Employee {
     }
 
     public String toString() {
-        return "Employee[ " +
-                "Employee ID: " + empId + " | " +
+        return "Employee ID: " + empId + " | " +
                 "Employee Name: " + empName + " | " +
-                "Mobile Number: " + mobNumber +
-                " ]";
+                "Mobile Number: " + mobNumber + "\n";
     }
 
-    public boolean equals(Object o) {
-        Employee e = (Employee) o;
+    @Override
+    public boolean equals(Object obj) {
+        Employee e = (Employee) obj;
         return this.empId == e.empId && this.empName.equals(e.empName) && this.mobNumber == e.mobNumber;
     }
-    public int hashCode(){
-        return Objects.hash(empId,empName,mobNumber);
-    }
 
-    static void printTreeSet(TreeSet<Employee> xlist) {
-        for (Employee x:xlist) {
-            System.out.println(x);
-        }
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(empId, empName, mobNumber);
     }
 }
 
-public class TreeSet14 {
+public class TreeMap14 {
 
     public static void main(String[] args) {
-        TreeSet<Employee> al = new TreeSet<>();
-        al.add(new Employee(1, "Jalib", 9995550077L));
-        al.add(new Employee(2, "Karthik", 1234567890L));
-        Employee.printTreeSet(al);
+        TreeMap<Integer,Employee> al = new TreeMap<Integer,Employee>();
+        al.put(1,new Employee(100, "Jalib", 9995550077L));
+        al.put(2,new Employee(101, "Karthik", 1234567890L));
+        TreeMap<Integer,Employee> al2 = new TreeMap<Integer,Employee>();
+        al2.put(1,new Employee(100, "Jalib", 9995550077L));
+        al2.put(2,new Employee(101, "Karthik", 1234567890L));
 
-        // size()
-        System.out.println("//size()");
-        System.out.println("The size of the TreeSet is: " + al.size());
+        System.out.println("----------------HASH MAP for al-----------");
+        for (Entry<Integer,Employee> x:al.entrySet()) {
+            System.out.println(x);
+        }
 
+        System.out.println("----------------HASH MAP for al2-----------");
+        for (Entry<Integer,Employee> x:al2.entrySet()) {
+            System.out.println(x);
+        }
+
+
+        // equals(Object o)
+        System.out.println("-----------------// hashCode() ------------------");
+        System.out.println(al.equals(al2));
+        
     }
 }

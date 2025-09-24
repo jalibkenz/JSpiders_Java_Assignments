@@ -1,6 +1,7 @@
-//addAll(collection c)
+//get(Object key)
 
-import java.util.TreeSet;
+import java.util.Map.Entry;
+import java.util.TreeMap;
 
 class Employee {
     int empId;
@@ -14,27 +15,24 @@ class Employee {
     }
 
     public String toString() {
-        return "Employee[ " +
-                "Employee ID: " + empId + " | " +
+        return "Employee ID: " + empId + " | " +
                 "Employee Name: " + empName + " | " +
-                "Mobile Number: " + mobNumber +
-                " ]";
+                "Mobile Number: " + mobNumber;
     }
 }
 
-public class TreeSet03 {
+public class TreeMap03 {
 
     public static void main(String[] args) {
-        TreeSet<Employee> al = new TreeSet<>();
-        al.add(new Employee(1, "Jalib", 9995550077L));
-        al.add(new Employee(2, "Karthik", 1234567890L));
-        TreeSet<Employee> al2 = new TreeSet<>();
-        al2.add(new Employee(1, "Lokesh", 7816278377L));
-        al2.add(new Employee(2, "Gowtham", 9985642638L));
-        // addAll(collection c)
-        al.addAll(al2);
-        for (Employee x:al) {
+        TreeMap<Integer,Employee> al = new TreeMap<Integer,Employee>();
+        al.put(1,new Employee(100, "Jalib", 9995550077L));
+        al.put(2,new Employee(101, "Karthik", 1234567890L));
+        for (Entry<Integer,Employee> x:al.entrySet()) {
             System.out.println(x);
         }
+
+        //get(Object key)
+        System.out.println(al.get(1));
+        
     }
 }

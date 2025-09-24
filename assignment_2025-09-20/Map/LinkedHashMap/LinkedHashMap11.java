@@ -1,7 +1,7 @@
-// removeAll(Collection c)
+//values()
 
-import java.util.LinkedHashSet;
-import java.util.Objects;
+import java.util.Map.Entry;
+import java.util.LinkedHashMap;
 
 class Employee {
     int empId;
@@ -15,47 +15,28 @@ class Employee {
     }
 
     public String toString() {
-        return "Employee[ " +
-                "Employee ID: " + empId + " | " +
+        return "Employee ID: " + empId + " | " +
                 "Employee Name: " + empName + " | " +
-                "Mobile Number: " + mobNumber +
-                " ]";
-    }
-
-    public boolean equals(Object o) {
-        Employee e = (Employee) o;
-        return this.empId == e.empId && this.empName.equals(e.empName) && this.mobNumber == e.mobNumber;
-    }
-
-    public int hashCode(){
-        return Objects.hash(empId,empName,mobNumber);
-    }
-
-    static void printLinkedHashSet(LinkedHashSet<Employee> xlist) {
-        for (Employee x:xlist) {
-            System.out.println(x);
-        }
-
+                "Mobile Number: " + mobNumber+"\n";
     }
 }
 
-public class LinkedHashSet11 {
+public class LinkedHashMap11 {
 
     public static void main(String[] args) {
-        LinkedHashSet<Employee> al = new LinkedHashSet<>();
-        al.add(new Employee(1, "Jalib", 9995550077L));
-        al.add(new Employee(2, "Karthik", 1234567890L));
-        Employee.printLinkedHashSet(al);
+        LinkedHashMap<Integer,Employee> al = new LinkedHashMap<Integer,Employee>();
+        al.put(1,new Employee(100, "Jalib", 9995550077L));
+        al.put(2,new Employee(101, "Karthik", 1234567890L));
+        Employee e = new Employee(007, "Zine", 9895001234L);
+        al.put(3,e);
+        System.out.println("----------------HASH MAP-----------");
+        for (Entry<Integer,Employee> x:al.entrySet()) {
+            System.out.println(x);
+        }
 
-        LinkedHashSet<Employee> al2 = new LinkedHashSet<>();
-        al2.add(new Employee(1, "Bharath", 1234566760L));
-        al2.add(new Employee(2, "Karthik", 1234567890L));
-        Employee.printLinkedHashSet(al2);
-
-        // removeAll(Collection c)
-        System.out.println("//remove(Collection c)");
-        al.removeAll(al2);
-        Employee.printLinkedHashSet(al);
-
+        //values()
+        System.out.println("-----------------------------------");
+        System.out.println(al.values());
+        
     }
 }

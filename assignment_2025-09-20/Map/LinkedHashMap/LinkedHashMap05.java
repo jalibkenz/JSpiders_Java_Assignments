@@ -1,6 +1,8 @@
-// clear()
+//containsKey(Object key)
 
-import java.util.LinkedHashSet;
+
+import java.util.Map.Entry;
+import java.util.LinkedHashMap;
 
 class Employee {
     int empId;
@@ -14,29 +16,27 @@ class Employee {
     }
 
     public String toString() {
-        return "Employee[ " +
-                "Employee ID: " + empId + " | " +
+        return "Employee ID: " + empId + " | " +
                 "Employee Name: " + empName + " | " +
-                "Mobile Number: " + mobNumber +
-                " ]";
+                "Mobile Number: " + mobNumber;
     }
 }
 
-public class LinkedHashSet05 {
+public class LinkedHashMap05 {
 
     public static void main(String[] args) {
-        LinkedHashSet<Employee> al = new LinkedHashSet<>();
-        al.add(new Employee(1, "Jalib", 9995550077L));
-        al.add(new Employee(2, "Karthik", 1234567890L));
-
-        for (Employee x:al) {
+        LinkedHashMap<Integer,Employee> al = new LinkedHashMap<Integer,Employee>();
+        al.put(1,new Employee(100, "Jalib", 9995550077L));
+        al.put(2,new Employee(101, "Karthik", 1234567890L));
+        System.out.println("----------------HASH MAP-----------");
+        for (Entry<Integer,Employee> x:al.entrySet()) {
             System.out.println(x);
         }
-        System.out.println("Clearing about to start and print output");
-        // clear()
-        al.clear();
-        System.out.println(al);
-        System.out.println("Printed output after clear");
 
+        //containsKey(Object key)
+        
+        System.out.println("-----------------------------------");
+        System.out.println(al.containsKey(1));
+        
     }
 }
